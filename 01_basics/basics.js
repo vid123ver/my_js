@@ -116,3 +116,47 @@ const bignumber = 213456754324356765432n;
     //strict check
     // console.log("2" === 2);
 }
+
+{
+    // primitive datatypes uses stack and non-primitive data types uses heap 
+    let user1 = {
+        email:"vidhanverma@gmail.com",
+        id:2
+    }
+    let user2 = user1;
+    user2.email = "dhfuhuf@gmail.com";
+    console.log(`email changes to ${user1.email}`);//this syntax. is string interpolation
+    console.log(user2.email);
+}
+
+{
+    const gameName = new String('v.verma');
+    console.log(gameName[0]);
+    console.log(gameName.length);
+    console.log(gameName.charAt(2));
+    console.log(gameName.indexOf('t'));
+    console.log(gameName.indexOf('v'));
+    // console.log(newString);
+    const anotherString = gameName.slice(-5 , 5);
+    console.log(anotherString);
+    //substring doesnot follow -ve indexing
+    // const newString = new String('    vidhan     ');
+    const newString2 = "   vidhan.   ";
+    console.log(newString2);
+    console.log(newString2.trim());
+
+
+    const url = "https://vidhan.com/vv%20verma";
+    console.log(url.replace('%20' , '_'));
+
+    console.log(url.includes('nice'))//check that the specifies keyword is in variable or not 
+    //split function
+    let text = "Hello,World,JS";
+    let words = text.split(",");  
+    console.log(words);  
+    // Output: ["Hello", "World", "JS"]
+
+
+    // 	(42).toString() → Converts to string ("42")
+	// 	(5.678).toFixed(2) → Rounds to 2 decimal places ("5.68")
+}
