@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        #gavecss {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px yellow;
+            background-color: #ef2222;
+        }
+        #clock-box {
+            background-color: rgb(69, 69, 50);
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+        }
+        #clock{
+            font-size: 40px;
+            font-family: monospace;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+            display: block;
+        }
+        .label {
+        color: yellow;
+        font-size: 30px;
+        font-weight: bold;
+        display: block; /* for making "Your local time" this text in middle  */
+    }
+    </style>
+</head>
+<body>
+    <div id = "gavecss">
+     <span >Digital Clock::</span>
+     </div>
+    <div id="clock-box">
+        <span class = "label">Your local time</span>
+        <span id="clock"></span>
+    </div>
+
+</body>
+<script>
+        const clock = document.getElementById('clock');
+        setInterval(function(){
+            let date = new Date();
+            clock.innerHTML = date.toLocaleTimeString('en-US', { hour12: true });
+        } , 1000);
+</script>
+
+</html>
