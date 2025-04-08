@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color-switcher</title>
+    <style>
+        body{
+            font-family:Arial, sans-serif;
+            text-align: center;
+            transition:back-ground 0.4s ease;
+            padding:50px;
+            background-color: black; 
+            color: white; 
+        }
+        h1{
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            line-height: 100px;/* vertically centers the text inside the box */
+            border-radius: 10%;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: capitalize;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+
+        #yellow {
+    background-color: yellow;
+    color: black; /* better contrast */
+}
+#red {
+    background-color: red;
+}
+#green {
+    background-color: green;
+}
+#blue {
+    background-color: blue;
+}
+#gray {
+    background-color: gray;
+}
+#black{
+    background-color: black;
+    border: 2px solid white;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Color switcher</h1>
+    <span class = "button" id = "yellow">yellow</span>
+    <span class = "button" id = "red">Red</span>
+    <span class = "button" id = "green">Green</span>
+    <span class = "button" id = "blue">blue</span>
+    <span class = "button" id = "gray">gray</span>
+    <span class = "button" id = "black">black</span>
+
+
+    <script>
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(any_var => {
+            any_var.addEventListener('click' , () => {
+                const color = any_var.id;
+                document.body.style.backgroundColor = color;
+            });
+        });
+    </script>
+</body>
+</html>
