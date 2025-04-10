@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <div id = "wrapper" style="background-color: white;">  
+        <h1>Number guessing game</h1>
+        <p>Try and Guessing a random numberbetween 1 and 100</p>
+        <p>You have 10 attemps to guess the right number</p>
+        </br>
+    <form class = "form" action="">
+        <label for="guessField" id = "guess">Guess Number</label>
+        <input type="text" id = "guessField" class = "guessField">
+        <br>
+        <input type="submit" id = "subt" value = "submit guess" class = "guessSubmit">
+    </form>
+
+    <div class = "result"></div>
+    <!-- This span is for updating guess field value -->
+    <p>Previous guess: <span class = "guesses"></span></p>
+    <p>Guesses Remaining: <span class = "lastResult">10</span></p>
+    <p class = "lowOrHi"></p>
+    
+    </div>
+    <script src = "four.js"></script>
+</body>
+</html>
