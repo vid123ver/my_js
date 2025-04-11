@@ -1,0 +1,12 @@
+-> JS is synchronous (each operaation waits for te last one to complete befour executing), sigle threaded language which is slow as compared to modern language
+but it solo engine is not used it is mostly integrated with environment or with 
+browser which make it faster .
+
+-> Execute one line at a time .
+
+-> Two types of code written in JS 
+   1. Blogcing code : Block the flow of code (Read File Sync) .
+   2. Non Blocing code : Does not block execution (Read File Async) .
+
+-> setTimeout : do task after specified time 
+-> setInterval : do task countinously after specified time

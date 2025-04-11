@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout and setInterval</title>
+</head>
+<body>
+    <h1>vidhan verma</h1>
+    <button id = "start">Start</button>
+    <button id = "stop">Stop</button>
+
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("vidhan");
+    // } , 3000);
+
+
+    //
+    const sayvidhan = function (){
+        console.log("vidhan");
+    }
+    const changeText = function(){
+       document.querySelector('h1').
+       innerHTML = "best chess player of all time"; 
+    }
+    const changeme = setTimeout(changeText , 2000);
+    //
+
+
+    //
+    const sayDate = function (str){
+        console.log(str , Date.now());
+    }
+    const intervalId = setInterval(sayDate , 1000 , "Hello vidhan")
+
+    // clearTimeout(intervalId);//need reference of that setTimeout which we want to diffuse
+</script>
+</html>
