@@ -2,6 +2,8 @@
 but it solo engine is not used it is mostly integrated with environment or with 
 browser which make it faster .
 
+->JS is a prototype-based language that also supports procedural and object-oriented programming.
+
 -> Execute one line at a time .
 
 -> Two types of code written in JS 
